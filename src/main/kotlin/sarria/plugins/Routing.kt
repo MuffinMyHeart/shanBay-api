@@ -14,6 +14,7 @@ fun Application.configureRouting() {
         randomArticle()
         static {
             resources("static")
+//            defaultResource("./index.html")
             defaultResource("static/index.html")
         }
 
