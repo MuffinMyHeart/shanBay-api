@@ -6,14 +6,12 @@ import io.ktor.response.*
 import io.ktor.routing.*
 import sarria.model.Article
 
-private const val BASE_URl = "http://192.168.131.39:8080"
-
 val imageUrl = listOf(
-    "$BASE_URl/image/article/image1.jpeg",
-    "$BASE_URl/image/article/image2.jpeg",
-    "$BASE_URl/image/article/image3.jpeg",
-    "$BASE_URl/image/article/image4.png",
-    "$BASE_URl/image/article/image5.jpeg",
+    "${sarria.BASE_URL}/image/article/image1.jpeg",
+    "${sarria.BASE_URL}/image/article/image2.jpeg",
+    "${sarria.BASE_URL}/image/article/image3.jpeg",
+    "${sarria.BASE_URL}/image/article/image4.png",
+    "${sarria.BASE_URL}/image/article/image5.jpeg",
 )
 
 val totalReads = listOf(9.3f, 18.2f, 32.1f, 21.5f, 45.2f)
